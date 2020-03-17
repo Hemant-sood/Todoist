@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -65,5 +66,29 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
- 
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater menuInflater = getMenuInflater();
+        menuInflater.inflate(R.menu.main_menu,menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.about :
+                                Intent i1 = new Intent(getApplicationContext(),About.class);
+                                startActivity(i1);
+                                break;
+            case R.id.contact :
+                                Intent i2 = new Intent(getApplicationContext(),Contact.class);
+                                startActivity(i2);
+                                break;
+            case R.id.version:
+                                Toast.makeText(getApplicationContext(),"v1.0",Toast.LENGTH_LONG).show();
+                                break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }

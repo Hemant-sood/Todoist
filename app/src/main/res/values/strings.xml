@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">To do list</string>
+    <string name="about">About</string>
+    <string name="contact">Contact Us</string>
+    <string name="version">Version</string>
+    <string name="about_text">In this app titled \"To do list\" you can add you task associated with date when this task is going to be completed so that you never forget your task. "\n\n"
+                               In this , You can \"DELETE\" the task as well ,To delete you have to press \"SHOW button\" and then long presses the task you want to be delete and then prompt a alert\"Ask you to delete \" , then finally click \"YES\" delete."\n\n"
+                            And make sure you have INTERNET  connection because your task are stored on online server.
+    </string>
+    <string name="contact_text1">
+        Hey!"\n"
+        This is developed by me "\n\n"Hemant Prakash Sood "\n\n"and this is my very first android application
+        "\n\n"If you have any doubt, query , suggestion etc..  "\n\n"You can contact me using this mail
+    </string>
+    <string name="contact_text2">
+        honeysoos.soood1999@gmail.com
+    </string>
+    <string name="contact_text3">
+        https://www.linkedin.com/in/hemant-prakash-913559183/
+    </string>
 </resources>
